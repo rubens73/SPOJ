@@ -1,10 +1,10 @@
-import sys
 total = 0
-for i in ranger(4):
+for i in range(4):
 	tomadas = int(input())
-	if(tomadas>=2 and tomas<=6):
-		total = total + t
+	if(tomadas>=2 and tomadas<=6):
+		total = total + tomadas
 	else:
-		sys.exit(0)
-total = total-3
-printf("%d", total)
+		break
+if(total > 4 ):
+    total = total-3
+print(total)
