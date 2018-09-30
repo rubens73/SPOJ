@@ -6,8 +6,6 @@ Este é um arquivo de script temporário.
 """
 
 tabas = 0
-taba_x = 0
-taba_y = 0
 ramos = 0
 aux = list()
 
@@ -43,11 +41,11 @@ while(True):
     aux.append(matrix)
     
 for index in range(len(aux)):
+    
     print("Teste ", index+1)
-    for i in range(len(aux[index])):
-        
-        if aux[index][i][0] < aux[index][i][1]:
-            taba_x = aux[index][i][0]
-            taba_y = aux[index][i][1]
-            menor = aux[index][i][2]
-            print(taba_x," ",taba_y," ",menor)
+    
+    taba_x = aux[index][index][0]
+    taba_y = aux[index][index][1]
+    menor = aux[index][index][2]
+    
+    #for i in range(len(aux[index])):
